@@ -1,7 +1,7 @@
-# Welcome
+# Документация Allsports
 
-This is your documentation project created with [Diplodoc](https://diplodoc.com).
+Добро пожаловать в документацию Allsports.
 
-## Getting started
+## Руководства
 
-Edit this file or add new pages and update `toc.yaml`.
+- [Панель пользователя](user-panel.md)

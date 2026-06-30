@@ -1,9 +1,5 @@
 title: Allsports Documentation
 href: index.md
-navigation:
-  header:
-    rightItems:
-      - type: controls
 items:
-  - name: Overview
-    href: index.md
+  - name: Панель пользователя
+    href: user-panel.md
