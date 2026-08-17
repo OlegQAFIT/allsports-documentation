@@ -1,0 +1,109 @@
+.dc-toc__top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 16px 8px 12px;
+  margin-bottom: 8px;
+}
+
+.dc-toc__top::before {
+  content: "";
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background-image: url("../images/company-panel/image1.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.dc-toc__top-header,
+.dc-toc__top-header_link {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #4f83ff;
+}
+
+.dc-toc__content > .dc-toc__list {
+  padding-right: 16px;
+  padding-bottom: 30px;
+}
+
+.dc-toc-item__text-block {
+  padding: 8px 10px 8px 18px;
+}
+
+.dc-toc-item__text {
+  display: block;
+  border-radius: 12px;
+  padding: 10px 14px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.dc-toc-item__text:hover {
+  background: rgba(79, 131, 255, 0.12);
+  color: #7aa2ff;
+  transform: translateX(2px);
+}
+
+.dc-toc-item__text_active {
+  background: rgba(79, 131, 255, 0.18);
+  color: #ffffff;
+}
+
+.dc-doc-page__content h1 {
+  margin-bottom: 28px;
+}
+
+.dc-doc-page__content h2 {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.dc-doc-page__content ul:first-of-type {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.dc-doc-page__content ul:first-of-type li {
+  margin-bottom: 14px;
+}
+
+.dc-doc-page__content ul:first-of-type a {
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid rgba(79, 131, 255, 0.18);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  color: #8fb0ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.dc-doc-page__content ul:first-of-type a:hover {
+  border-color: rgba(79, 131, 255, 0.45);
+  background: rgba(79, 131, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .dc-toc__top {
+    padding: 16px 12px 8px 12px;
+  }
+
+  .dc-toc__top::before {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+  }
+
+  .dc-toc__top-header,
+  .dc-toc__top-header_link {
+    font-size: 20px;
+  }
+}
