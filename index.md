@@ -3,11 +3,11 @@
 <div class="doc-home-hero">
   <div class="doc-home-hero__eyebrow">Allsports Documentation</div>
   <p class="doc-home-hero__lead">
-    Единая база пользовательских руководств Allsports. Все документы оформлены в одном стандарте Diplodoc и готовы к расширению новыми инструкциями без потери целостного вида.
+    Здесь собраны основные инструкции Allsports для партнеров, HR-менеджеров, сотрудников и пользователей мобильного приложения.
   </p>
 </div>
 
-## Руководства
+## Разделы документации
 
 <div class="doc-home-grid">
   <a class="doc-home-card" href="partner-panel.html">
