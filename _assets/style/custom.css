@@ -169,7 +169,7 @@ body[data-color-mode="dark"],
 .dc-doc-page__content img[src*="_assets/images/"]:not([src*="_assets/images/company-panel/image10.png"]):not([src*="_assets/images/company-panel/image11.png"]):not([src*="_assets/images/company-panel/image12.png"]):not([src*="_assets/images/company-panel/image13.png"]):not([src*="_assets/images/partner-panel/image11.png"]):not([src*="_assets/images/mobile-app/image1.png"]) {
   display: block;
   width: auto;
-  max-width: min(100%, 920px);
+  max-width: min(100%, 760px);
   height: auto;
   margin: 18px auto 12px;
   border-radius: 18px;
