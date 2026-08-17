@@ -14,6 +14,42 @@ from docx.table import Table
 from docx.text.paragraph import Paragraph
 
 
+DOC_META = {
+    "partner-panel.md": {
+        "lead": "Инструкция для партнеров Allsports по работе с визитами, историей посещений, документами и карточкой спортивного объекта.",
+        "overview": [
+            ("Для кого", "Партнеры и администраторы объектов"),
+            ("Основные разделы", "Визиты, история, документы, описание объекта"),
+            ("Формат", "Веб-версия инструкции + исходный DOCX"),
+        ],
+    },
+    "company-panel.md": {
+        "lead": "Инструкция по работе с HR порталом Allsports для сценариев B2B, B2C и Copay: от входа в систему до управления сотрудниками, заявками и документами.",
+        "overview": [
+            ("Для кого", "HR-менеджеры и представители компаний"),
+            ("Модели работы", "B2B, B2C и Copay"),
+            ("Основные разделы", "Сотрудники, подписки, счета, акты, аудит"),
+        ],
+    },
+    "user-panel-docx.md": {
+        "lead": "Руководство для сотрудников с корпоративной подпиской Allsports: регистрация, работа с профилем, способ оплаты и доступ к мобильному приложению.",
+        "overview": [
+            ("Для кого", "Пользователи моделей B2C и Copay"),
+            ("Основные разделы", "Профиль, оплата, приложение, правовая информация"),
+            ("Формат", "Веб-руководство + исходный DOCX"),
+        ],
+    },
+    "mobile-app.md": {
+        "lead": "Инструкция по мобильному приложению Allsports: установка, вход, поиск объектов, оформление визитов и работа с профилем пользователя.",
+        "overview": [
+            ("Платформы", "iOS, Android, Huawei AppGallery"),
+            ("Основные сценарии", "Установка, авторизация, визиты, профиль"),
+            ("Формат", "Веб-руководство + исходный DOCX"),
+        ],
+    },
+}
+
+
 def iter_block_items(parent: DocxDocument) -> Iterable[Paragraph | Table]:
     body = parent.element.body
     for child in body.iterchildren():
@@ -168,6 +204,51 @@ def paragraph_to_markdown(
     return lines
 
 
+def render_page_chrome(
+    target_md: Path,
+    docx_download_rel: str,
+) -> list[str]:
+    meta = DOC_META.get(target_md.name, {})
+    lead = meta.get("lead", "Короткое описание документа.")
+    overview = meta.get(
+        "overview",
+        [
+            ("Для кого", "Уточните аудиторию документа"),
+            ("Основные разделы", "Уточните ключевые сценарии"),
+            ("Формат", "Веб-версия + исходный DOCX"),
+        ],
+    )
+
+    lines = [
+        f'<div class="doc-page-actions">',
+        f'  <a class="doc-download-link" href="{docx_download_rel}">Скачать исходный DOCX</a>',
+        "</div>",
+        "",
+        '<div class="doc-hero-badge">',
+        '  <div class="doc-hero-badge__logo" aria-hidden="true"></div>',
+        '  <div class="doc-hero-badge__meta">',
+        '    <div class="doc-hero-badge__eyebrow">Руководство пользователя</div>',
+        '    <div class="doc-hero-badge__brand">Allsports Documentation</div>',
+        "  </div>",
+        "</div>",
+        "",
+        '<div class="doc-page-intro">',
+        f'  <p class="doc-page-lead">{lead}</p>',
+        '  <div class="doc-page-overview">',
+    ]
+    for label, value in overview:
+        lines.extend(
+            [
+                '    <div class="doc-page-overview__item">',
+                f'      <div class="doc-page-overview__label">{label}</div>',
+                f'      <div class="doc-page-overview__value">{value}</div>',
+                "    </div>",
+            ]
+        )
+    lines.extend(["  </div>", "</div>", ""])
+    return lines
+
+
 def convert_docx(
     source_docx: Path,
     target_md: Path,
@@ -182,7 +263,8 @@ def convert_docx(
     image_rel_dir = f"{image_rel_root}/{slug}"
     media_map = extract_docx_media(source_docx, image_output_dir)
 
-    lines: list[str] = [f"# {title}", "", f"[Скачать исходный DOCX]({docx_download_rel})", ""]
+    lines: list[str] = [f"# {title}", ""]
+    lines.extend(render_page_chrome(target_md, docx_download_rel))
     for subtitle in subtitles:
         lines.append(f"_{subtitle}_")
         lines.append("")

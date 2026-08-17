@@ -1,6 +1,8 @@
 # Subscriber panel Allsports
 
-[Скачать исходный DOCX](_assets/documents/user-panel.docx)
+<div class="doc-page-actions">
+  <a class="doc-download-link" href="_assets/documents/user-panel.docx">Скачать исходный DOCX</a>
+</div>
 
 <div class="doc-hero-badge">
   <div class="doc-hero-badge__logo" aria-hidden="true"></div>
@@ -10,7 +12,23 @@
   </div>
 </div>
 
-## Содержание
+<div class="doc-page-intro">
+  <p class="doc-page-lead">Руководство для сотрудников с корпоративной подпиской Allsports: регистрация, работа с профилем, способ оплаты и доступ к мобильному приложению.</p>
+  <div class="doc-page-overview">
+    <div class="doc-page-overview__item">
+      <div class="doc-page-overview__label">Для кого</div>
+      <div class="doc-page-overview__value">Пользователи моделей B2C и Copay</div>
+    </div>
+    <div class="doc-page-overview__item">
+      <div class="doc-page-overview__label">Основные разделы</div>
+      <div class="doc-page-overview__value">Профиль, оплата, приложение, правовая информация</div>
+    </div>
+    <div class="doc-page-overview__item">
+      <div class="doc-page-overview__label">Формат</div>
+      <div class="doc-page-overview__value">Веб-руководство + исходный DOCX</div>
+    </div>
+  </div>
+</div>
 
 ## 1. О системе Allsports и Панели пользователя
 
