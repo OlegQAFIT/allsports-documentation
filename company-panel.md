@@ -2,9 +2,13 @@
 
 [Скачать исходный DOCX](_assets/documents/company-panel-user-guide-b2b-b2c-copay.docx)
 
-_Руководство пользователя_
-
-![Иллюстрация](_assets/images/company-panel/image1.png)
+<div class="doc-hero-badge">
+  <div class="doc-hero-badge__logo" aria-hidden="true"></div>
+  <div class="doc-hero-badge__meta">
+    <div class="doc-hero-badge__eyebrow">Руководство пользователя</div>
+    <div class="doc-hero-badge__brand">Allsports Documentation</div>
+  </div>
+</div>
 
 ## 1. О системе Allsports и Панели компании
 
