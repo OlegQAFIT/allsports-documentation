@@ -1,10 +1,33 @@
 # Документация Allsports
 
-В проект загружены только переданные исходные документы.
+<div class="doc-home-hero">
+  <div class="doc-home-hero__eyebrow">Allsports Documentation</div>
+  <p class="doc-home-hero__lead">
+    Здесь собраны основные инструкции Allsports для партнеров, HR-менеджеров, сотрудников и пользователей мобильного приложения.
+  </p>
+</div>
 
-## Документы
+## Разделы документации
 
-- [Партнерская панель](partner-panel.md)
-- [Панель компании B2B / B2C / Copay](company-panel.md)
-- [Панель пользователя](user-panel-docx.md)
-- [Мобильное приложение](mobile-app.md)
+<div class="doc-home-grid">
+  <a class="doc-home-card" href="partner-panel.html">
+    <div class="doc-home-card__title">Supplier panel</div>
+    <div class="doc-home-card__meta">Для партнеров и администраторов объектов</div>
+    <p class="doc-home-card__desc">Регистрация визитов, история посещений, документы, информация об объекте и поддержка.</p>
+  </a>
+  <a class="doc-home-card" href="company-panel.html">
+    <div class="doc-home-card__title">HR портал B2B / B2C / Copay</div>
+    <div class="doc-home-card__meta">Для HR-менеджеров и представителей компаний</div>
+    <p class="doc-home-card__desc">Подписки сотрудников, заявки, счета, акты, аудит и сценарии работы в моделях B2B, B2C и Copay.</p>
+  </a>
+  <a class="doc-home-card" href="user-panel-docx.html">
+    <div class="doc-home-card__title">Subscriber panel</div>
+    <div class="doc-home-card__meta">Для сотрудников с корпоративной подпиской</div>
+    <p class="doc-home-card__desc">Регистрация, профиль, способ оплаты, доступ к мобильному приложению и правовая информация.</p>
+  </a>
+  <a class="doc-home-card" href="mobile-app.html">
+    <div class="doc-home-card__title">Мобильное приложение</div>
+    <div class="doc-home-card__meta">Для пользователей Allsports</div>
+    <p class="doc-home-card__desc">Установка, авторизация, поиск объектов, оформление визитов, избранное и работа с профилем.</p>
+  </a>
+</div>

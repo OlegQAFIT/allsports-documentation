@@ -1,10 +1,34 @@
 # Мобильное приложение ALLSPORTS
 
-[Скачать исходный DOCX](_assets/documents/mobile-app-user-guide.docx)
+<div class="doc-page-actions">
+  <a class="doc-download-link" href="_assets/documents/mobile-app-user-guide.docx">Скачать исходный DOCX</a>
+</div>
 
-_Руководство пользователя_
+<div class="doc-hero-badge">
+  <div class="doc-hero-badge__logo" aria-hidden="true"></div>
+  <div class="doc-hero-badge__meta">
+    <div class="doc-hero-badge__eyebrow">Руководство пользователя</div>
+    <div class="doc-hero-badge__brand">Allsports Documentation</div>
+  </div>
+</div>
 
-![Иллюстрация](_assets/images/mobile-app/image1.png)
+<div class="doc-page-intro">
+  <p class="doc-page-lead">Инструкция по мобильному приложению Allsports: установка, вход, поиск объектов, оформление визитов и работа с профилем пользователя.</p>
+  <div class="doc-page-overview">
+    <div class="doc-page-overview__item">
+      <div class="doc-page-overview__label">Платформы</div>
+      <div class="doc-page-overview__value">iOS, Android, Huawei AppGallery</div>
+    </div>
+    <div class="doc-page-overview__item">
+      <div class="doc-page-overview__label">Основные сценарии</div>
+      <div class="doc-page-overview__value">Установка, авторизация, визиты, профиль</div>
+    </div>
+    <div class="doc-page-overview__item">
+      <div class="doc-page-overview__label">Формат</div>
+      <div class="doc-page-overview__value">Веб-руководство + исходный DOCX</div>
+    </div>
+  </div>
+</div>
 
 ## 1. Введение
 
@@ -12,7 +36,6 @@ Allsports — корпоративный спортивный абонемент
 
 По подписке Allsports доступны 700+ объектов и 118 видов активностей по всей стране — фитнес-клубы, бассейны, теннисные корты, единоборства, танцы, йога и многое другое.
 
-![Иллюстрация](_assets/images/mobile-app/image1.png)
 Приложение доступно для скачивания на трёх платформах:
 
 1. App Store (iOS): apps.apple.com/by/app/allsports/id1555419187

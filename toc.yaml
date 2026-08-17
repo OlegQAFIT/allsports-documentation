@@ -1,11 +1,11 @@
 title: Allsports Documentation
 href: index.md
 items:
-  - name: Партнерская панель
+  - name: Supplier panel
     href: partner-panel.md
-  - name: Панель компании B2B / B2C / Copay
+  - name: HR портал B2B / B2C / Copay
     href: company-panel.md
-  - name: Панель пользователя
+  - name: Subscriber panel
     href: user-panel-docx.md
   - name: Мобильное приложение
     href: mobile-app.md

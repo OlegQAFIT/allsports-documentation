@@ -1,10 +1,34 @@
-# Партнёрская панель AllSPORTS
+# Supplier panel AllSPORTS
 
-[Скачать исходный DOCX](_assets/documents/partner-panel-user-guide.docx)
+<div class="doc-page-actions">
+  <a class="doc-download-link" href="_assets/documents/partner-panel-user-guide.docx">Скачать исходный DOCX</a>
+</div>
 
-_Руководство пользователя_
+<div class="doc-hero-badge">
+  <div class="doc-hero-badge__logo" aria-hidden="true"></div>
+  <div class="doc-hero-badge__meta">
+    <div class="doc-hero-badge__eyebrow">Руководство пользователя</div>
+    <div class="doc-hero-badge__brand">Allsports Documentation</div>
+  </div>
+</div>
 
-![Иллюстрация](_assets/images/partner-panel/image1.png)
+<div class="doc-page-intro">
+  <p class="doc-page-lead">Инструкция для партнеров Allsports по работе с визитами, историей посещений, документами и карточкой спортивного объекта.</p>
+  <div class="doc-page-overview">
+    <div class="doc-page-overview__item">
+      <div class="doc-page-overview__label">Для кого</div>
+      <div class="doc-page-overview__value">Партнеры и администраторы объектов</div>
+    </div>
+    <div class="doc-page-overview__item">
+      <div class="doc-page-overview__label">Основные разделы</div>
+      <div class="doc-page-overview__value">Визиты, история, документы, описание объекта</div>
+    </div>
+    <div class="doc-page-overview__item">
+      <div class="doc-page-overview__label">Формат</div>
+      <div class="doc-page-overview__value">Веб-версия инструкции + исходный DOCX</div>
+    </div>
+  </div>
+</div>
 
 ## 1. О системе
 
