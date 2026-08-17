@@ -178,7 +178,13 @@ body[data-color-mode="dark"],
 
 .dc-doc-page__content img[src*="_assets/images/company-panel/image4.png"],
 .dc-doc-page__content img[src*="_assets/images/user-panel-docx/image4.png"] {
+  display: block !important;
+  width: min(100%, 260px) !important;
   max-width: min(100%, 320px) !important;
+  height: auto !important;
+  margin: 16px auto 10px !important;
+  border-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
 }
 
 .dc-doc-page__content img[src*="_assets/images/mobile-app/"]:not([src*="image1.png"]) {
@@ -233,6 +239,7 @@ body[data-color-mode="dark"],
 
   .dc-doc-page__content img[src*="_assets/images/company-panel/image4.png"],
   .dc-doc-page__content img[src*="_assets/images/user-panel-docx/image4.png"] {
+    width: min(100%, 220px) !important;
     max-width: min(100%, 260px) !important;
   }
 
