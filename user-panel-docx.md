@@ -1,10 +1,8 @@
-# Панель пользователя Allsports
+# Subscriber panel Allsports
 
 [Скачать исходный DOCX](_assets/documents/user-panel.docx)
 
 _Руководство пользователя_
-
-![Иллюстрация](_assets/images/user-panel-docx/image1.png)
 
 ![Иллюстрация](_assets/images/user-panel-docx/image2.png)
 
