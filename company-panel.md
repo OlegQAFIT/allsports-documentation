@@ -1,12 +1,32 @@
 # HR портал B2B / B2C / Copay Allsports
 
-[Скачать исходный DOCX](_assets/documents/company-panel-user-guide-b2b-b2c-copay.docx)
+<div class="doc-page-actions">
+  <a class="doc-download-link" href="_assets/documents/company-panel-user-guide-b2b-b2c-copay.docx">Скачать исходный DOCX</a>
+</div>
 
 <div class="doc-hero-badge">
   <div class="doc-hero-badge__logo" aria-hidden="true"></div>
   <div class="doc-hero-badge__meta">
     <div class="doc-hero-badge__eyebrow">Руководство пользователя</div>
     <div class="doc-hero-badge__brand">Allsports Documentation</div>
+  </div>
+</div>
+
+<div class="doc-page-intro">
+  <p class="doc-page-lead">Инструкция по работе с HR порталом Allsports для сценариев B2B, B2C и Copay: от входа в систему до управления сотрудниками, заявками и документами.</p>
+  <div class="doc-page-overview">
+    <div class="doc-page-overview__item">
+      <div class="doc-page-overview__label">Для кого</div>
+      <div class="doc-page-overview__value">HR-менеджеры и представители компаний</div>
+    </div>
+    <div class="doc-page-overview__item">
+      <div class="doc-page-overview__label">Модели работы</div>
+      <div class="doc-page-overview__value">B2B, B2C и Copay</div>
+    </div>
+    <div class="doc-page-overview__item">
+      <div class="doc-page-overview__label">Основные разделы</div>
+      <div class="doc-page-overview__value">Сотрудники, подписки, счета, акты, аудит</div>
+    </div>
   </div>
 </div>
 
