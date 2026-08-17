@@ -91,6 +91,15 @@
   transform: translateY(-1px);
 }
 
+.dc-doc-page__content img[src*="_assets/images/mobile-app/"]:not([src*="image1.png"]) {
+  display: block;
+  width: min(100%, 380px);
+  height: auto;
+  margin: 18px auto 12px;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
 @media (max-width: 768px) {
   .dc-toc__top {
     padding: 16px 12px 8px 12px;
@@ -105,5 +114,10 @@
   .dc-toc__top-header,
   .dc-toc__top-header_link {
     font-size: 20px;
+  }
+
+  .dc-doc-page__content img[src*="_assets/images/mobile-app/"]:not([src*="image1.png"]) {
+    width: min(100%, 320px);
+    border-radius: 20px;
   }
 }
