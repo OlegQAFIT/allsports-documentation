@@ -1,1 +1,15 @@
 lang: ru
+allowCustomResources: true
+
+resources:
+  style:
+    - _assets/style/custom.css
+
+docs-viewer:
+  logo-options:
+    src: _assets/images/company-panel/image1.png
+    src-dark: _assets/images/company-panel/image1.png
+    src-mobile: _assets/images/company-panel/image1.png
+    src-mobile-dark: _assets/images/company-panel/image1.png
+    src-preview: _assets/images/company-panel/image1.png
+    title: Allsports
