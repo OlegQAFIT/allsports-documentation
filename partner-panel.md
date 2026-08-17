@@ -1,4 +1,4 @@
-# Партнёрская панель AllSPORTS
+# Supplier panel AllSPORTS
 
 <div class="doc-page-actions">
   <a class="doc-download-link" href="_assets/documents/partner-panel-user-guide.docx">Скачать исходный DOCX</a>
