@@ -1,3 +1,34 @@
+:root {
+  --allsports-accent: #4f83ff;
+  --allsports-sidebar-hover-bg: rgba(79, 131, 255, 0.12);
+  --allsports-sidebar-hover-text: #3f72ea;
+  --allsports-sidebar-active-bg: #d8e4ff;
+  --allsports-sidebar-active-text: #173a8f;
+  --allsports-badge-border: rgba(79, 131, 255, 0.22);
+  --allsports-badge-bg: linear-gradient(135deg, rgba(79, 131, 255, 0.14), rgba(255, 255, 255, 0.96));
+  --allsports-badge-shadow: 0 14px 30px rgba(57, 84, 152, 0.12);
+  --allsports-badge-eyebrow: #4862ad;
+  --allsports-badge-brand: #5e7fd1;
+}
+
+html[data-theme="dark"],
+html[data-color-mode="dark"],
+body[data-theme="dark"],
+body[data-color-mode="dark"],
+.g-root_theme_dark,
+.theme_dark,
+[class*="theme_dark"] {
+  --allsports-sidebar-hover-bg: rgba(79, 131, 255, 0.14);
+  --allsports-sidebar-hover-text: #7aa2ff;
+  --allsports-sidebar-active-bg: rgba(79, 131, 255, 0.18);
+  --allsports-sidebar-active-text: #ffffff;
+  --allsports-badge-border: rgba(79, 131, 255, 0.2);
+  --allsports-badge-bg: linear-gradient(135deg, rgba(79, 131, 255, 0.12), rgba(255, 255, 255, 0.02));
+  --allsports-badge-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+  --allsports-badge-eyebrow: #e4ebff;
+  --allsports-badge-brand: #8fb0ff;
+}
+
 .dc-toc__top {
   position: relative;
   display: flex;
@@ -24,7 +55,7 @@
   font-size: 24px;
   line-height: 1.15;
   font-weight: 700;
-  color: #4f83ff;
+  color: var(--allsports-accent);
 }
 
 .dc-toc__content > .dc-toc__list {
@@ -44,14 +75,15 @@
 }
 
 .dc-toc-item__text:hover {
-  background: rgba(79, 131, 255, 0.12);
-  color: #7aa2ff;
+  background: var(--allsports-sidebar-hover-bg);
+  color: var(--allsports-sidebar-hover-text);
   transform: translateX(2px);
 }
 
 .dc-toc-item__text_active {
-  background: rgba(79, 131, 255, 0.18);
-  color: #ffffff;
+  background: var(--allsports-sidebar-active-bg);
+  color: var(--allsports-sidebar-active-text);
+  font-weight: 600;
 }
 
 .dc-doc-page__content h1 {
@@ -69,10 +101,11 @@
   gap: 14px;
   margin: 18px 0 28px;
   padding: 12px 16px;
-  border: 1px solid rgba(79, 131, 255, 0.2);
+  border: 1px solid var(--allsports-badge-border);
   border-radius: 18px;
-  background: linear-gradient(135deg, rgba(79, 131, 255, 0.12), rgba(255, 255, 255, 0.02));
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+  background: var(--allsports-badge-bg);
+  box-shadow: var(--allsports-badge-shadow);
+  backdrop-filter: blur(8px);
 }
 
 .doc-hero-badge__logo {
@@ -96,13 +129,13 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d7def7;
+  color: var(--allsports-badge-eyebrow);
 }
 
 .doc-hero-badge__brand {
   font-size: 14px;
   line-height: 1.3;
-  color: #8fb0ff;
+  color: var(--allsports-badge-brand);
 }
 
 .dc-doc-page__content ul:first-of-type {
