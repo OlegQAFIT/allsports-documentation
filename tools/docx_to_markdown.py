@@ -204,6 +204,48 @@ def paragraph_to_markdown(
     return lines
 
 
+def renumber_ordered_lists(lines: list[str]) -> list[str]:
+    ordered_item = re.compile(r"^\d+\.\s+(.*)$")
+
+    def is_transient(line: str) -> bool:
+        stripped = line.strip()
+        return (
+            not stripped
+            or stripped.startswith("![")
+            or stripped.startswith("*Рис")
+            or stripped.startswith('<span class="doc-inline-icon"')
+        )
+
+    result = lines[:]
+    i = 0
+    while i < len(result):
+        match = ordered_item.match(result[i])
+        if not match:
+            i += 1
+            continue
+
+        run: list[int] = [i]
+        j = i + 1
+        while j < len(result):
+            if is_transient(result[j]):
+                j += 1
+                continue
+            if ordered_item.match(result[j]):
+                run.append(j)
+                j += 1
+                continue
+            break
+
+        if len(run) > 1:
+            for n, idx in enumerate(run, 1):
+                content = ordered_item.match(result[idx]).group(1)
+                result[idx] = f"{n}. {content}"
+
+        i = j
+
+    return result
+
+
 def render_page_chrome(
     target_md: Path,
     docx_download_rel: str,
@@ -291,6 +333,7 @@ def convert_docx(
                 lines.extend(table_lines)
                 lines.append("")
 
+    lines = renumber_ordered_lists(lines)
     content = "\n".join(lines).rstrip() + "\n"
     target_md.write_text(content, encoding="utf-8")
 
