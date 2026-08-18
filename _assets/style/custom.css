@@ -388,6 +388,25 @@ body[data-color-mode="dark"],
   text-align: center;
 }
 
+.doc-inline-icon {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.doc-inline-icon img {
+  display: inline-block !important;
+  width: auto !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
+  height: auto !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  vertical-align: middle;
+}
+
 .dc-doc-page__content img[src*="_assets/images/"]:not([src*="_assets/images/company-panel/image10.png"]):not([src*="_assets/images/company-panel/image11.png"]):not([src*="_assets/images/company-panel/image12.png"]):not([src*="_assets/images/company-panel/image13.png"]):not([src*="_assets/images/partner-panel/image11.png"]):not([src*="_assets/images/mobile-app/image1.png"]) {
   display: block;
   width: auto;
